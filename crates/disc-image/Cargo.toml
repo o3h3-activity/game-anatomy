@@ -1,0 +1,7 @@
+[package]
+name = "disc-image"
+version.workspace = true
+edition.workspace = true
+description = "Open CUE/BIN, ISO, and MDF optical disc images and read 2048-byte user-data sectors."
+
+[dependencies]

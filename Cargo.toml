@@ -1,0 +1,17 @@
+[workspace]
+members = ["bindings/python", "crates/disc-image", "crates/iso9660"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+
+[package]
+name = "game-anatomy"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+disc-image = { path = "crates/disc-image" }
+hex = "0.4"
+iso9660 = { path = "crates/iso9660" }
+md-5 = { version = "0.11", default-features = false }

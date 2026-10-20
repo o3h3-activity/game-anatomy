@@ -1,0 +1,15 @@
+[package]
+name = "game-anatomy-python"
+version.workspace = true
+edition.workspace = true
+publish = false
+
+[lib]
+name = "game_anatomy"
+crate-type = ["cdylib"]
+# Exercise the cdylib through Python, not a Rust executable linked to libpython.
+test = false
+
+[dependencies]
+game-anatomy = { path = "../.." }
+pyo3 = { version = "=0.29.2", features = ["abi3-py310"] }

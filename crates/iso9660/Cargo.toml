@@ -1,0 +1,7 @@
+[package]
+name = "iso9660"
+version.workspace = true
+edition.workspace = true
+description = "Bounded, cache-backed ISO 9660 file lookup over any 2048-byte sector source."
+
+[dependencies]
